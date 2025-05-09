@@ -1,0 +1,13 @@
+.Chart{
+    margin: 30px 40px;
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 30px;
+}
+
+.Chart::-webkit-scrollbar{
+    display: none;
+}

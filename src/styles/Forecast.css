@@ -1,0 +1,63 @@
+/* Forecast.css */
+
+.forecast-container {
+  padding: 5px;
+}
+
+.forecast-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 24px;
+}
+
+.forecast-title {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.forecast-divider {
+  /* margin: 12px 0; */
+}
+
+.forecast-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.forecast-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.forecast-day {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.forecast-icon{
+  display: inline-block;
+  width: 40px;
+  animation: Hover 1s infinite alternate;
+}
+
+@keyframes Hover {
+    from{
+      transform: translateY(5px);
+    }
+    to{
+      transform: translateY(-5px);
+    }
+}
+
+
+.forecast-icon {
+  width: 60px;
+}
+
+.forecast-temp {
+  font-weight: 500;
+}

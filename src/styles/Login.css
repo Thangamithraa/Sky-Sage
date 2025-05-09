@@ -1,0 +1,159 @@
+.login-section {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content; /* Full viewport height */
+  justify-content: center; /* Center the form */
+  align-items: center; /* Center the form */
+  animation: fadein 1s ease;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.form-box {
+  padding: 20px;
+  width: 300px;
+  height: fit-content;
+  opacity: 100%; 
+  background: none;
+}
+
+.form-value {
+  text-align: center;
+}
+
+.form-value h2 {
+  margin-bottom: 20px;
+  margin-top: 0px;
+  font-size: 25px;
+  color: #007BFF;
+}
+
+.inputbox {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.inputbox input {
+  /* width: 70%; */
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #333;
+  background: transparent;
+  font-size: 16px;
+  color: black;
+  margin-top: 20px;
+}
+
+.inputbox label {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  padding: 0 5px;
+  color:  #007BFF;
+  transition: 0.3s;
+  font-size: 18px; /* Increase font size */
+  font-weight: normal;
+}
+
+.inputbox input:focus + label,
+.inputbox input:not(:placeholder-shown) + label {
+  top: -20px;
+  font-size: 14px;
+}
+
+.error-message {
+  color: #ff6b6b;
+  font-size: 14px;
+  margin-top: 5px;
+  position: relative;
+  display: block;
+  text-align: left;
+}
+
+#form-button {
+  background: #007BFF;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin: 0px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#form-button :hover {
+  background: #005bb5;
+}
+
+#form-button :disabled {
+  background: #ccc;
+}
+
+.register {
+  margin-top: 20px;
+}
+
+.register p {
+  font-size: 14px;
+  color: black;
+}
+
+.register a {
+  color: #007BFF;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.register a:hover {
+  color: #005bb5;
+}
+
+.logo-container {
+  padding: 5px; /* You can keep or remove padding */
+  border-radius: 5px; /* Rounded corners (optional) */
+  margin: 0 auto 15px auto; /* Center the container and space below */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Centering the logo horizontally */
+  align-items: center; /* Centering the logo vertically */
+  width: fit-content; /* Adjust to the content size */
+}
+
+.logo {
+  width: 200px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Add this to your existing Login.css */
+
+.remember-me {
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+ a{
+  text-decoration: none;
+  color: #005bb5;
+  font-weight: bold;
+}
+
+@keyframes fadein{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}

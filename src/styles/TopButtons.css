@@ -1,0 +1,30 @@
+/* styles/TopButtons.css */
+
+.top-buttons-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.city-button {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 500; /* font-medium */
+  padding: 8px 12px; /* px-3 py-2 */
+  border-radius: 0.375rem; /* rounded-md */
+  background-color: rgba(0, 0, 0, 0.137);
+  transition: 0.2s ease-in;
+  cursor: pointer;
+  border: none;
+}
+
+.top-buttons{
+ margin: 0px 5px;
+}
+
+.city-button:hover {
+  background-color: black;
+  color: white;
+  scale: 1.1;
+}

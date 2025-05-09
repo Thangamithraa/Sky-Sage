@@ -1,0 +1,7 @@
+.app-container{
+    margin: 0px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    border: 1px solid black;
+}

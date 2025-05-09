@@ -1,0 +1,25 @@
+/* styles/TimeAndLocation.css */
+
+.time-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 0; /* my-6 */
+}
+
+.date-text {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 200; /* font-extralight */
+}
+
+.location-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 12px 0;
+}
+
+.location-text {
+  font-size: 2em; /* text-3xl */
+  font-weight: 500; /* font-medium */
+}

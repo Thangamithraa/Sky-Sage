@@ -1,0 +1,18 @@
+/* styles/WeatherOverview.css */
+
+.weather-overview-container {
+  margin: 10px;
+  padding: 60px;
+  width: 80%;
+  background: rgb(148, 168, 224); /* from-cyan-600 to-blue-600 */
+  box-shadow: 0 10px 15px -3px rgba(75, 85, 99, 0.4); /* shadow-xl shadow-gray-400 */
+  border-radius: 0.5rem; /* rounded-md if needed */
+}
+.weather-overview-container *{
+  /* border: 1px solid green; */
+}
+.weather-overview{
+   width:100%;
+   display:flex;
+   justify-Content: space-evenly;
+}

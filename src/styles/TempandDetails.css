@@ -1,0 +1,100 @@
+/* styles/TempandDetails.css */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem; /* text-xl */
+  color: #000000; /* text-cyan-700 */
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 150px;
+  justify-content: space-evenly;
+}
+
+.weather-icon {
+  width: 150px; /* w-20 */
+  animation: hover 3s infinite alternate;
+}
+
+.temperature {
+  font-size: 3rem; /* text-5xl */
+}
+
+.vertical-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* space-y-3 */
+  align-items: flex-start;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  min-width: 150px;
+  font-weight: 300; /* font-light */
+  font-size: 0.875rem; /* text-sm */
+  justify-content: space-between;
+}
+
+.inputs-wrapper .icon {
+  margin-right: 4px; 
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 30px;
+  transition: 500ms ease;
+}
+
+.inputs-wrapper .icon:hover{
+  color: white;
+  background-color: black;
+  box-shadow: 0px 0px 10px blue;
+}
+
+
+.value {
+  font-weight: 500; /* font-medium */
+  margin-left: 4px; /* ml-1 */
+}
+
+.horizontal-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px; /* space-x-10 */
+  font-size: 0.875rem; /* text-sm */
+  padding: 12px 0;
+}
+
+.horizontal-detail-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.detail-text {
+  font-weight: 200; /* font-light */
+  margin-left: 4px; /* ml-1 */
+}
+
+.detail-text .value {
+  font-weight: 500; /* font-medium */
+  margin-left: 4px; /* ml-1 */
+}
+.unit-button{
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  transition: 500ms ease;
+}
+.units-wrapper .unit-button:hover{
+  background-color: black;
+  color: white;
+  box-shadow: 0px 0px 20px blue;
+}

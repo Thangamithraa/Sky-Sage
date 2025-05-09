@@ -1,0 +1,212 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+@font-face {
+    font-family: Poppins;
+    src: url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    font-family: "Josefin Sans";
+}
+
+
+input:focus{
+    outline: none;
+}
+
+
+ body{
+    margin: 0px;
+    font-family: 'Poppins';
+ }
+
+/* Flexbox and alignment */
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.space-x-4 > :not(:first-child) {
+    margin-left: 1rem; /* Assuming 4 means 1rem */
+}
+
+.space-y-3 > :not(:first-child) {
+    margin-top: 0.75rem; /* Assuming 3 means 0.75rem */
+}
+
+/* Padding and Margin */
+.p-2 {
+    padding: 0.5rem; /* Assuming 2 means 0.5rem */
+}
+
+.py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.my-6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.mx-1 {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+
+/* Text and Font */
+.text-gray-700 {
+    color: #4a5568; /* Tailwind's gray-700 */
+}
+
+.text-xl {
+    font-size: 1.25rem; /* Assuming xl means 1.25rem */
+}
+
+.text-2xl {
+    font-size: 1.5rem; /* Assuming 2xl means 1.5rem */
+}
+
+.font-light {
+    font-weight: 300; /* Tailwind's light font weight */
+}
+
+.font-medium {
+    font-weight: 500; /* Tailwind's medium font weight */
+}
+
+/* Buttons and Hover Effects */
+.hover\:scale-125:hover {
+    transform: scale(1.25);
+}
+
+.transition {
+    transition: all 0.3s ease;
+}
+
+.ease-out {
+    transition-timing-function: ease-out;
+}
+
+/* Other Utilities */
+.shadow-xl {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.rounded-md {
+    border-radius: 0.375rem; /* Assuming md means 0.375rem */
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+@media screen and (max-width:1200px) {
+    .weather-overview{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+    }
+    .weather-overview-container{
+        padding: 20px;
+        width: 90%;
+    }
+    .date-text{
+        text-align: center;
+    }
+    .inputs-container{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+    }
+    .inputs-wrapper{
+        width: 100%;
+        gap: 5px;
+    }
+    .inputs-wrapper .icon{
+        margin: 0px;
+    }
+    .location-text{
+        margin: 0px;
+        font-size: 30px;
+    }
+    .location-container{
+        margin: 0px;
+    }
+    .weather-info{
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+    .vertical-details{
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+    .horizontal-details{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .TempandDetails{
+        flex-direction: column;
+        height: fit-content;
+        justify-content: space-evenly;
+    }
+    .forecast-items{
+        overflow: scroll;
+    }
+    .forecast-items::-webkit-scrollbar{
+        display: none;
+    }
+    .forecast-item{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 10px;
+    }
+    .forecast-item .forecast-day{
+        text-align: center;
+    }
+    .skysage-logo{
+        scale: 2;
+    }
+    .intro-container{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .intro-container .left{
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .topbar-user-details{
+        font-size: 2vw;
+        text-align: center;
+    }
+    .topbar-container{
+        box-sizing: border-box;
+    }
+    .topbar-container .skysage-logo{
+        width: 20vw;
+    }
+    .logout-button{
+        width: 30px;
+    }
+
+}
